@@ -91,9 +91,9 @@ def subinfo(url):
                         elif time_now > int(info_num[3]):
                             output_text = output_text_head + '`\n此订阅已于`' + dateTime + '`过期！'
                     else:
-                        output_text = output_text_head + '`\n到期时间：`没有说明捏`'
+                        output_text = output_text_head + '`\n到期时间：`无到期信息`'
                 except:
-                    output_text = '订阅链接：`' + url + '`\n无流量信息捏'
+                    output_text = '订阅链接：`' + url + '`\n无流量信息'
             else:
                 output_text = '订阅链接：`' + url + '`\n无法访问\n'
             final_output = final_output + output_text + '\n\n'
